@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dip"
+        android:text="@string/title_calibragem"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtViewRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtViewAccelerator"
+        android:background="#0f0"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="@string/title_left"
+        android:textColor="#000" />
+
+    <com.blogspot.receitastenologicas.componentes.InvertedProgressBar
+        android:id="@+id/progressBarLeft"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/txtViewRight"
+        android:layout_below="@+id/txtViewRight"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtViewAccelerator"
+        android:gravity="center"
+        android:maxHeight="48dip"
+        android:maxWidth="100dip"
+        android:minHeight="100dp" />
+
+    <ToggleButton
+        android:id="@+id/btLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/txtViewRight"
+        android:layout_below="@+id/progressBarLeft"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtViewAccelerator"
+        android:gravity="center"
+        android:textOff="@string/toggle_turn_off"
+        android:textOn="@string/toggle_turn_on" />
+
+    <TextView
+        android:id="@+id/txtViewAccelerator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtViewRight"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:background="#00f"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="@string/title_accelerator"
+        android:textColor="#fff" >
+    </TextView>
+
+    <com.blogspot.receitastenologicas.componentes.VerticalProgressBar
+        android:id="@+id/progressBarAccelerator"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBarRight"
+        android:layout_alignLeft="@+id/txtViewAccelerator"
+        android:layout_below="@id/txtViewRight"
+        android:layout_toLeftOf="@+id/progressBarRight"
+        android:maxHeight="48dip"
+        android:maxWidth="100dip"
+        android:minHeight="100dp" />
+
+    <ToggleButton
+        android:id="@+id/btAcelerador"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/progressBarAccelerator"
+        android:layout_alignRight="@+id/progressBarAccelerator"
+        android:layout_alignTop="@+id/btLeft"
+        android:textOff="@string/toggle_turn_off"
+        android:textOn="@string/toggle_turn_on" />
+
+    <TextView
+        android:id="@+id/txtViewLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBarRight"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/txtViewAccelerator"
+        android:background="#ffff00"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text=" -->>"
+        android:textColor="#000" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRight"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtViewRight"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txtViewAccelerator"
+        android:gravity="center"
+        android:maxHeight="48dip"
+        android:maxWidth="100dip"
+        android:minHeight="100dp" />
+
+    <ToggleButton
+        android:id="@+id/btRight"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarRight"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txtViewAccelerator"
+        android:gravity="center"
+        android:textOff="@string/toggle_turn_off"
+        android:textOn="@string/toggle_turn_on" />
+
+</RelativeLayout>

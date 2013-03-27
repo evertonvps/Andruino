@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Andruino</string>
+    <string name="title_calibragem">Aguardando a Calibragem!!!</string>
+    <string name="title_left">&lt;&lt;--</string>
+    <string name="title_right"> -->></string>
+    <string name="title_accelerator">  N  </string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="menu_settings">menu_settings</string>
+    <string name="toggle_turn_on">OK</string>
+    <string name="toggle_turn_off">Calibrar</string>
+  <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">Você não esta conectado</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">Conectado </string>
+    <string name="title_not_connected">Não Conectado</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Procurando Dispositivos...</string>
+    <string name="select_device">Conecte-se a um Dispositivo</string>
+    <string name="none_paired">Não existe dispositivo pareado</string>
+    <string name="none_found">Dispositivos não encontrados</string>
+    <string name="title_paired_devices">Dispositivos Pareados</string>
+    <string name="title_other_devices">Outros Dispositivos</string>
+    <string name="button_scan">Procurar</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Estabelecer Conexão</string>
+    <string name="discoverable">Descobrir Dispositivos</string>
+</resources>
